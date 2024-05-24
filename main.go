@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println("V0 : go01 work")
+	fmt.Println("V0.1.1 : go01 work")
 	
 	fmt.Println(greetings.Hello("Cong"))
 }
