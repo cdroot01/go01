@@ -1,12 +1,15 @@
 package main
 
 import (
-	"fmt"
-	"github.com/cdroot01/go837/greetings"
+	"log"
+
+	"github.com/cdroot01/go01/cmd"
 )
 
+func init() {
+	log.SetFlags(log.Flags() &^ (log.Ldate | log.Ltime))
+}
+
 func main() {
-	fmt.Println("V0.1.1 : go01 work")
-	
-	fmt.Println(greetings.Hello("Cong"))
+	cmd.Run()
 }
